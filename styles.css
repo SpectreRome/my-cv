@@ -1,0 +1,85 @@
+    /* Import the Helvetica Neue font */
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }   
+
+    body {
+        font-family: 'Helvetica Neue', sans-serif;
+        background-color: #141414;
+        color: #ffffff;
+    }
+
+    .navbar {
+        background-color: #000000; /* Black background for a GTA IV vibe */
+        padding: 15px;
+        display: flex;
+        justify-content: flex-end; /* Align links to the right */
+    }
+
+    .navbar-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    .navbar-links a {
+        text-decoration: none;
+        color: #ffffff; /* White font */
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px; /* Increased letter spacing for the GTA IV look */
+        transition: color 0.3s ease;
+    }
+
+    .navbar-links a:hover {
+        color: #c0c0c0; /* Subtle hover effect */
+    }
+
+    .navbar-links a:active {
+        color: #a0a0a0; /* Active state */
+    }
+    .intro-container {
+        display: flex;
+        justify-content: space-between; /* Space between intro content and photo */
+        align-items: center; /* Vertically center the content */
+        flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    }
+
+    .intro-section {
+        flex: 1; /* Take up space on the left */
+        max-width: 60%; /* Control the width of the intro content */
+    }
+
+    .photo-section {
+        flex: 1; /* Take up space on the right */
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        max-width: 40%; /* Control the width of the photo section */
+    }
+
+    .photo-section img {
+        border-radius: 50%; /* Make the image round */
+        width: 200px; /* Adjust width */
+        height: 200px; /* Adjust height */
+    }
+
+    @media (max-width: 768px) {
+        /* Stack intro and photo vertically on smaller screens */
+        .intro-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .intro-section, .photo-section {
+            max-width: 100%; /* Full width for each section */
+        }
+
+        .photo-section img {
+            margin-top: 20px; /* Add space between text and image */
+        }
+    }
