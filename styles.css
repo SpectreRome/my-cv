@@ -14,7 +14,7 @@
     }
 
     .navbar {
-        background-color: #000000; /* Black background for a GTA IV vibe */
+        background-color: #000000; 
         padding: 15px;
         display: flex;
         justify-content: flex-end; /* Align links to the right */
@@ -49,7 +49,7 @@
         align-items: center; /* Vertically center the content */
         flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
     }
-
+    
     .intro-section {
         flex: 1; /* Take up space on the left */
         max-width: 60%; /* Control the width of the intro content */
@@ -83,3 +83,34 @@
             margin-top: 20px; /* Add space between text and image */
         }
     }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .one {
+        grid-column: 1 / 3;
+        grid-row: 1;
+      }
+      .two {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+      }
+      .three {
+        grid-column: 1;
+        grid-row: 2 / 5;
+      }
+      .four {
+        grid-column: 3;
+        grid-row: 3;
+      }
+      .five {
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .six {
+        grid-column: 3;
+        grid-row: 4;
+      }
+      

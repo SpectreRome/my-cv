@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin's Portfolio</title>
+    <title>Justin's Reactive Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -21,15 +21,6 @@
             transform: scale(1.1);
         }
 
-        .intro-section h1 {
-            font-size: 5.5rem;
-            font-weight: 800px;
-        }
-
-        .intro-section p {
-            font-size: 1.25rem;
-            margin-top: 50px;
-        }
 
         /* Toggle menu styling for mobile */
         .mobile-menu {
@@ -38,7 +29,7 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Section -->
+   <!-- Navbar Section -->
 <nav class="navbar bg-black w-full p-5">
     <div class="container mx-auto flex items-center justify-between font-bold leading-tight">
         <!-- Left Justin's Portfolio -->
@@ -113,31 +104,4 @@
         </ul>
     </nav>
 
-   <!-- Introduction Section -->
-<section class="intro-container flex flex-col md:flex-row justify-center items-center mt-16 px-8 mx-auto w-full max-w-screen-xl">
-    <!-- Left side: Introduction content -->
-    <div class="intro-section text-center md:text-left w-full md:w-1/2 mb-8 md:mb-0 px-4">
-      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8" style="color: #FFAB00;">
-        Welcome to My Personal Portfolio
-      </h1>
-      <p class="text-white text-lg md:text-xl leading-relaxed mb-8">
-        I created this portfolio based on my Curriculum Vitae with improvements and to showcase my Front-End 💻, Data💹, Hobbies 🎮🎶, and PowerBI Skills 🛠 in this portfolio. The design on this portfolio was inspired by a video game I've been playing
-      </p>
-    </div>
-  
-    <!-- Right side: Photo -->
-    <div class="photo-section flex justify-center w-full md:w-1/2 px-4">
-      <img src="Rome.png" alt="Your Photo" class="rounded-lg shadow-lg w-[400px] h-[400px] md:w-[500px] md:h-[500px] object-cover">
-    </div>
-  </section>
-  
 
-    <!-- JavaScript for toggling mobile menu -->
-    <script>
-        document.getElementById('menu-button').addEventListener('click', function() {
-            const navbarLinks = document.querySelector('.navbar-links');
-            navbarLinks.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>

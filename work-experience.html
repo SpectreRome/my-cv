@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Work Experience</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #141414; /* Dark background */
+            color: #ffffff;
+            margin: 0px;
+        }
+
+        .navbar-link:hover {
+            color: #FFAB00;
+            transform: scale(1.1);
+        }
+
+        /* Toggle menu styling for mobile */
+        .mobile-menu {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar bg-black w-full p-5">
+        <div class="container mx-auto flex items-center justify-between font-bold leading-tight">
+            <!-- Left Justin's Portfolio -->
+            <div class="text-white text-2xl">Justin's Portfolio</div>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <button class="block md:hidden text-white" id="menu-button">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Links (Hidden on mobile by default) -->
+            <ul class="navbar-links hidden md:flex space-x-8 text-lg">
+                <li>
+                    <a href="index.html" class="navbar-link text-white uppercase tracking-wider transition duration-200 ease-in-out">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="navbar-link text-white uppercase tracking-wider transition duration-300 ease-in-out">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="work-experience.html" class="navbar-link text-white uppercase tracking-wider transition duration-300 ease-in-out">
+                        Work Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="powerbi.html" class="navbar-link text-white uppercase tracking-wider transition duration-300 ease-in-out">
+                        PowerBI
+                    </a>
+                </li>
+                <li>
+                    <a href="hobbies.html" class="navbar-link text-white uppercase tracking-wider transition duration-300 ease-in-out">
+                        Hobbies
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Work Experience Section -->
+<section class="work-experience-container bg-gray py-16 px-8"> 
+    <div class="container mx-auto max-w-screen-lg">
+        <!-- Section Heading -->
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" style="color: #FFAB00;">
+            Work Experience
+        </h2>
+        
+        <!-- Experience Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Experience 1 -->
+            <div class="experience-card bg-black-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-white">Software Quality Assurance & Graphics Design Intern</h3>
+                <p class="text-gray-300 mb-4">UpUp Technologies PTE. LTD | Oct 2023 - Dec 2023</p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Conducted manual testing on Medical CRM and data entry systems.</li>
+                    <li>Documented software flaws and worked with the development team to resolve issues.</li>
+                    <li>Suggested improvements to issue tracking workflows.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience 2 -->
+            <div class="experience-card bg-black-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-white">CSR VA (Chat Support)</h3>
+                <p class="text-gray-300 mb-4">Lazada and Shopee | Jun 2023 - Aug 2023</p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Specialized in customer issue resolution and effective communication.</li>
+                    <li>Managed high-volume interactions with attention to detail and quality.</li>
+                    <li>Collaborated with cross-functional teams for timely delivery and product quality.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience 3 -->
+            <div class="experience-card bg-black-800 p-6 rounded-lg shadow-lg md:col-span-2 mx-auto">
+                <h3 class="text-2xl font-bold mb-4 text-white">Student Library Assistant</h3>
+                <p class="text-gray-300 mb-4">Baliuag University | School Year 2022-2023</p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Proven ability to deliver exceptional customer service in a library setting.</li>
+                    <li>Demonstrated strong organizational and technical skills in managing library operations, assisting patrons, and maintaining library resources.</li>
+                    <li>Experienced in circulation processes, inventory management, and technology troubleshooting. Contributed to library digitization efforts.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('hidden');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
